@@ -8,9 +8,9 @@ private $cargaHoraria;
 private $ementa;
 private $periodo;
 private $curso;
-/* **************** FIM DOS ATRIBUTOS ********************************* */
+/* ******************************** FIM DOS ATRIBUTOS ****************************************** */
 
-/* **************** CONSTRUTOR DA CLASSE *************** */
+/* ****************************** CONSTRUTOR DA CLASSE ****************************************** */
 
 function __construct($nome = null,$cargaHoraria = null,$ementa = null,$periodo = null,$curso = null)
 {
@@ -21,11 +21,11 @@ function __construct($nome = null,$cargaHoraria = null,$ementa = null,$periodo =
   $this->curso = $curso;
 }
 
-/* *************** FIM DO CONSTRUTOR DA CLASSE ************* */
+/* ***************************** FIM DO CONSTRUTOR DA CLASSE ************************************ */
 
 
 
-/* **************** INICIO DOS GETS E SETS DOS ATRIBUTOS PUBLICOS ******** */
+/* ************************** INICIO DOS GETS E SETS DOS ATRIBUTOS PUBLICOS ********************** */
 
 /**
  * Get the value of none
@@ -134,14 +134,18 @@ return $this;
 
 
 
-/* ************************* FIM DOS GETS E SETS DOS ATRIBUTOS ************ */
+/* *************************** FIM DOS GETS E SETS DOS ATRIBUTOS *********************** */
 
 
-/* **************** INICIO DOS MÉTODOS *************** */
-function exibirDadosDisciplina()
+/* ********************************** INICIO DOS MÉTODOS ****************************** */
+function exibirDetalhes()
 {
 echo "<h1>Resumo da disciplina</h1>";
-echo $this->nome . "<br />" . $this->ementa . "<br />" . $this->curso;
+echo $this->nome . "<br />" . $this->curso . "<br />" . $this->periodo . "<br />" . $this->cargaHoraria . "<br />" . $this->ementa;
 }
+
+
+
+/* ********************************** FIM DOS MÉTODOS ******************************** */
 
 }

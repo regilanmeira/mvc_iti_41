@@ -11,7 +11,7 @@
 
        $disciplina = new Disciplina("Análise e Desenvolvimento de Sistemas","60 h","Lorem Ipsum Dolor....","4º Ano","Informática");
 
-       $disciplina->exibirDadosDisciplina();
+       $disciplina->exibirDetalhes();
     ?>
 </body>
 </html>
