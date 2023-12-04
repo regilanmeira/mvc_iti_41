@@ -30,9 +30,9 @@ function __construct($nome = null,$cargaHoraria = null,$ementa = null,$periodo =
 /**
  * Get the value of none
  */ 
-public function getNone()
+public function getNome()
 {
-return $this->none;
+return $this->nome;
 }
 
 /**
@@ -40,9 +40,9 @@ return $this->none;
  *
  * @return  self
  */ 
-public function setNone($none)
+public function setNome($nome)
 {
-$this->none = $none;
+$this->nome = $nome;
 
 return $this;
 }
@@ -144,8 +144,18 @@ echo "<h1>Resumo da disciplina</h1>";
 echo $this->nome . "<br />" . $this->curso . "<br />" . $this->periodo . "<br />" . $this->cargaHoraria . "<br />" . $this->ementa;
 }
 
+function inserir()
+{
+  echo "<h1>Disciplina inserida no SUAP</h1>";
+}
 
 
 /* ********************************** FIM DOS MÉTODOS ******************************** */
 
+static function mensagem()
+{
+  echo "<h2>Exibindo uma mensagem</h2>";
 }
+
+}
+
